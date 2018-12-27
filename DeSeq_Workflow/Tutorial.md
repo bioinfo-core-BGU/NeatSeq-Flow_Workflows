@@ -1,5 +1,5 @@
 # DeSeq2 Module Tutorial
-## Differential Gene Expression Analysis Using NeatSeq-Flow Platform
+## Differential Gene Expression Analysis Using **[NeatSeq-Flow](http://neatseq-flow.readthedocs.io/en/latest/)** Platform
 ## This Module Can Perform:
  - [Differential Gene Expression Using 'DESeq2' R Package]
  - [ Gene Annotation from Biomart or from Trinotate Results for De-Novo Transcriptome Assembly ]
