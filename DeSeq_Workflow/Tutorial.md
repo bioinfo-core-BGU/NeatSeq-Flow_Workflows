@@ -150,15 +150,15 @@
       - Choose the "Merge" step to be the previous step for the DeSeq2 new step.
       - Click on the "Add" button.
       - Click on the "Edit" button.
-    3. **Edit the "redirects" options of the "DESeq2" step**
-        Below the "redirects" in the left panel of the GUI:
-        - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
-        - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
-        - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
-        - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
-        - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
-        - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
-        - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
+   3. **Edit the "redirects" options of the "DESeq2" step**
+      Below the "redirects" in the left panel of the GUI:
+      - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
+      - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
+      - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
+      - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
+      - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
+      - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
+      - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
   
    
 # Contact
