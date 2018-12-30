@@ -49,6 +49,22 @@
         ```Bash
           wget https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/Samples_MetaData
         ```
+     ### The Samples Meta-Data File:
+
+     | Samples          | Genotype | Age  | Rep  |
+     |------------------|:--------:|------|------|
+     | N2_Day0_rep1     |    N2    | Day0 | rep1 |
+     | N2_Day5_rep1     |    N2    | Day5 | rep1 |
+     | mir-71_Day0_rep1 |  mir_71  | Day0 | rep1 |
+     | mir-71_Day5_rep1 |  mir_71  | Day5 | rep1 |
+     | N2_Day0_rep2     |    N2    | Day0 | rep2 |
+     | N2_Day5_rep2     |    N2    | Day5 | rep2 |
+     | mir-71_Day0_rep2 |  mir_71  | Day0 | rep2 |
+     | mir-71_Day5_rep2 |  mir_71  | Day5 | rep2 |
+     | N2_Day0_rep3     |    N2    | Day0 | rep3 |
+     | N2_Day5_rep3     |    N2    | Day5 | rep3 |
+     | mir-71_Day0_rep3 |  mir_71  | Day0 | rep3 |
+     | mir-71_Day5_rep3 |  mir_71  | Day5 | rep3 |
 
 ## Install Conda
 
