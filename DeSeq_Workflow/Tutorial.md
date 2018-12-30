@@ -35,6 +35,7 @@
 ***
 
 ## Download the GSE72232 Data
+
     1. Create New Directory for the Tutorial
        ```Bash
          mkdir GSE72232
@@ -48,7 +49,7 @@
         ```Bash
           wget https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/Samples_MetaData
         ```
-        
+
 ## Install Conda
 
   - For Linux 64bit, in the terminal:
