@@ -3,15 +3,13 @@
 &nbsp;  
 &nbsp;
 &nbsp;  
-<img align="right" src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/DeSeq2_Module_Report.gif" width="950">
+<img align="right" src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/DeSeq2_Module_Report.gif" width="1050">
 &nbsp;  
 &nbsp;
 &nbsp;  
 &nbsp;
 &nbsp;  
-&nbsp;
-&nbsp;  
-&nbsp;
+
 
 ***
 ## This Module Can Perform:
