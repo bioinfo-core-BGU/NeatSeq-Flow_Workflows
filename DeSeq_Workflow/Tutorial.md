@@ -36,16 +36,16 @@
 
 ## Download the GSE72232 Data
 
-    1. Create New Directory for the Tutorial
+  1. Create New Directory for the Tutorial
        ```Bash
          mkdir GSE72232
          cd GSE72232
        ```
-    2. Download The Raw Count Data:
+  2. Download The Raw Count Data:
         ```Bash
           wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE72nnn/GSE72232/suppl/GSE72232_RNA-seq_combined_counts.txt.gz
         ```
-    3. Download The Samples Meta-Data File:
+  3. Download The Samples Meta-Data File:
         ```Bash
           wget https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/Samples_MetaData
         ```
