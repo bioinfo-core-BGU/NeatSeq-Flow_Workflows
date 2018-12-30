@@ -3,9 +3,9 @@
 &nbsp;  
 &nbsp;
 &nbsp;  
-&nbsp;
+<img align="right" src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/DeSeq2_Module_Report.gif" width="950">
 &nbsp;  
-<img align="right" src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/DeSeq2_Module_Report.gif" width="850">
+&nbsp;
 &nbsp;  
 &nbsp;
 &nbsp;  
