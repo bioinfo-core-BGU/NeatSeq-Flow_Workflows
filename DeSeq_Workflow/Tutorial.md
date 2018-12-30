@@ -1,12 +1,11 @@
 # DeSeq2 Module Tutorial
 ## Differential Gene Expression Analysis Using **[NeatSeq-Flow](http://neatseq-flow.readthedocs.io/en/latest/)** Platform
-<img align="right" src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/DeSeq2_Module_Report.gif" width="650">
 &nbsp;  
 &nbsp;
 &nbsp;  
 &nbsp;
 &nbsp;  
-&nbsp;
+<img align="right" src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/DeSeq2_Module_Report.gif" width="850">
 &nbsp;  
 &nbsp;
 &nbsp;  
