@@ -1,16 +1,16 @@
 # DeSeq2 Module Tutorial
 ## Differential Gene Expression Analysis Using **[NeatSeq-Flow](http://neatseq-flow.readthedocs.io/en/latest/)** Platform
 ## This Module Can Perform:
- - [Differential Gene Expression Using 'DESeq2' R Package]
- - [ Gene Annotation from Biomart or from Trinotate Results for De-Novo Transcriptome Assembly ]
- - [ Quality control eg. MA,Volcano and PCAs]
- - [ Genes And Samples Filtering using 'scater' R package]
- - [ Expression Patterns Clustering of Significant Genes ]
- - [ Clusters Visualization eg. Heatmaps and Trend Plots ]
- - [ Gene Ontology and KEGG Enrichment Analysis]
- - [ Enrichment Analysis Visualization eg. Dot Plots ]
- - [ Gene Ontology and KEGG Terms Genes Overlap Visualization]
- - [ Generate Final Report in HTML Format]
+ - Differential Gene Expression Using 'DESeq2' R Package
+ - Gene Annotation from Biomart or from Trinotate Results for De-Novo Transcriptome Assembly
+ - Quality control eg. MA,Volcano and PCAs
+ - Genes And Samples Filtering using 'scater' R package
+ - Expression Patterns Clustering of Significant Genes
+ - Clusters Visualization eg. Heatmaps and Trend Plots
+ - Gene Ontology and KEGG Enrichment Analysis
+ - Enrichment Analysis Visualization eg. Dot Plots
+ - Gene Ontology and KEGG Terms Genes Overlap Visualization
+ - Generate Final Report in HTML Format
  
 ## In this Tutorial we will:
  - [ Installation ](#Installation)

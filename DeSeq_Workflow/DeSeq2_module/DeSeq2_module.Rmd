@@ -1472,7 +1472,7 @@ Run_click<-function(mat,click_path,outDir,HOMOGENEITY = 0.5){
                           main_plot_list <- c(main_plot_list ,list(heatmaps))
                         }
  
-                            if ((length(down_reg)>0) || (length(up_reg)>0)){
+                            if (((length(down_reg)>0) || (length(up_reg)>0)) && (is.na(opt$LRT))){
                                 up_down_clusters = clusters
                                 if (length(down_reg)>0){
                                     up_down_clusters[down_reg]='Down'
@@ -1509,7 +1509,7 @@ Run_click<-function(mat,click_path,outDir,HOMOGENEITY = 0.5){
                                 main_plot_list <- c(main_plot_list ,list(heatmaps))
                             }
  
-                            if ((length(down_reg)>0) || (length(up_reg)>0)){
+                            if (((length(down_reg)>0) || (length(up_reg)>0)) && (is.na(opt$LRT))){
                                 up_down_clusters = clusters
                                 if (length(down_reg)>0){
                                     up_down_clusters[down_reg]='Down'
@@ -1547,7 +1547,7 @@ Run_click<-function(mat,click_path,outDir,HOMOGENEITY = 0.5){
                             main_plot_list <- c(main_plot_list ,list(heatmaps))
                         }
  
-                        if ((length(down_reg)>0) || (length(up_reg)>0)){
+                        if (((length(down_reg)>0) || (length(up_reg)>0)) && (is.na(opt$LRT))){
                             up_down_clusters = clusters
                             if (length(down_reg)>0){
                                 up_down_clusters[down_reg]='Down'
@@ -1584,7 +1584,7 @@ Run_click<-function(mat,click_path,outDir,HOMOGENEITY = 0.5){
                             main_plot_list <- c(main_plot_list ,list(heatmaps))
                         }
  
-                        if ((length(down_reg)>0) || (length(up_reg)>0)){
+                        if (((length(down_reg)>0) || (length(up_reg)>0)) && (is.na(opt$LRT))){
                             up_down_clusters = clusters
                             if (length(down_reg)>0){
                                 up_down_clusters[down_reg]='Down'
@@ -1623,7 +1623,7 @@ Run_click<-function(mat,click_path,outDir,HOMOGENEITY = 0.5){
                         }
                         
                         
-                        if ((length(down_reg)>0) || (length(up_reg)>0)){
+                        if (((length(down_reg)>0) || (length(up_reg)>0)) && (is.na(opt$LRT))){
                             up_down_clusters = clusters
                             if (length(down_reg)>0){
                                 up_down_clusters[down_reg]='Down'
