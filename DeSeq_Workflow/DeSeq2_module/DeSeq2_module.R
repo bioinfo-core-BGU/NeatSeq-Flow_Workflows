@@ -624,6 +624,11 @@ if (opt$COUNT_SOURCE=='RSEM'){
       rownames(txi.rsem$length)=lapply(X =rownames(txi.rsem$length),FUN = function(x) unlist(stringi::stri_split(str = x,regex = "_"))[1] )
       rownames(txi.rsem$length)=lapply(X =rownames(txi.rsem$length),FUN = function(x) rev(unlist(stringi::stri_split(str = x,regex = ":")))[1] )
   }
+  
+  colnames(txi.rsem$abundance) = make.names(colnames(txi.rsem$abundance))
+  colnames(txi.rsem$counts) = make.names(colnames(txi.rsem$counts))
+  colnames(txi.rsem$length) = make.names(colnames(txi.rsem$length))
+  
   countData = txi.rsem$counts
   
   print('Done reading count data')
@@ -642,6 +647,9 @@ if (opt$COUNT_SOURCE=='RSEM'){
     sampleTable <- data.frame(sampleName = samples,
                               fileName   = files )
     countData = GetcountDataFromHTSeqCount(sampleTable)
+    
+    colnames(countData) = make.names(colnames(countData))
+    
     print('Done reading count data')
     
     
@@ -654,6 +662,7 @@ if (opt$COUNT_SOURCE=='RSEM'){
     rownames(countData)=lapply(X =rownames(countData),FUN = function(x) unlist(stringi::stri_split(str = x,regex = "_"))[1] )
     rownames(countData)=lapply(X =rownames(countData),FUN = function(x) rev(unlist(stringi::stri_split(str = x,regex = ":")))[1] )
   }
+  colnames(countData) = make.names(colnames(countData))
   print('Done reading count data')
   
 }
@@ -845,17 +854,20 @@ if ("package:clusterProfiler" %in% search()){
         if (!is.na(opt$KEGG_Species)){
             opt$Species = opt$KEGG_Species
         }
-        ORGANISM  = ORGANISMs$kegg_code[(sapply(X = ORGANISMs$scientific_name,FUN = function(X) stringi::stri_startswith(fixed =  stringi::stri_trans_tolower(opt$Species),str =  stringi::stri_trans_tolower(X)    )))]
+        ORGANISM  = ORGANISMs$kegg_code[(sapply(X = ORGANISMs$scientific_name,FUN = function(X) stringi::stri_startswith(fixed =  stringi::stri_replace_last(str = stringi::stri_trans_tolower(opt$Species), fixed = ' genes',replacement = ''),str =  stringi::stri_trans_tolower(X)    )))]
         if (length(ORGANISM)==0){
           ORGANISMs = na.omit(ORGANISMs)
           ORGANISM  = ORGANISMs$kegg_code[(sapply(X = ORGANISMs$common_name,FUN = function(X) stringi::stri_cmp_eq( stringi::stri_replace_last(str = stringi::stri_trans_tolower(opt$Species), fixed = ' genes',replacement = '') , stringi::stri_trans_tolower(X)    )))]
+          if (length(ORGANISM)==0){
+            ORGANISM  = ORGANISMs$kegg_code[(sapply(X = ORGANISMs$common_name,FUN = function(X) stringi::stri_startswith(fixed = stringi::stri_replace_last(str = stringi::stri_trans_tolower(opt$Species), fixed = ' genes',replacement = '') , str = stringi::stri_trans_tolower(X)    )))]
+          }
         }
       }
       
       
       
-      if (length(ORGANISM)>0){       
-        
+      if (length(ORGANISM)==1){       
+        print(ORGANISM)
         kegg=keggConv(ORGANISM,"uniprot") #'ncbi-geneid')
         uniprot =  unlist(lapply(X =names(kegg) ,FUN = function(x) rev(unlist(stringi::stri_split(str = x,regex = ":")))[1]))
         kegg=as.data.frame(kegg)
@@ -1109,6 +1121,8 @@ if (!is.na(Annotation)) {
 print('Reading samples data...')    
 #Read Sample Data
 colData <- read.csv(opt$SAMPLE_DATA_FILE, sep="\t", row.names=1)
+rownames(colData) = make.names(rownames(colData))
+
 used_samples = intersect(rownames(colData),colnames(countData))
 colData_col <- colnames(colData)
 countData <- countData[, used_samples]
@@ -1202,7 +1216,6 @@ if (opt$COUNT_SOURCE=='RSEM'){
                                            colData = colData,
                                            design  = as.formula(opt$DESIGN))
 }else{ 
-  
   DESeqDataSet_base <- DESeqDataSetFromMatrix(countData = countData,
                                          colData = colData,
                                          design = as.formula(opt$DESIGN))
@@ -1223,7 +1236,7 @@ if (!is.na(opt$CONTRAST)){
 }
 
 if (!is.na(opt$LRT)){
-    test_count[length(test_count)+1]='LTR'
+    test_count=c('LTR',test_count)
 }
 
 base_out_dir=opt$outDir
