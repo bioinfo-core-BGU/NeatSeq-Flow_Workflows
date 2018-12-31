@@ -136,35 +136,35 @@
         ```
 
 
-    ### Add DeSeq2 Step
-       <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Add_DeSeq2_Step.gif" width="650">
-       
-       1. **Add New Step:**   
-          In the 'Work-Flow' Tab choose The module template "DeSeq2_Simple(Using_Conda)" and click on the 'Create New Step' button.
-       2. **Choose Step base:**
-          - Click on the "DeSeq2" step button to see the step options. 
-          - Click on the "base" option in the left panel of the GUI, just below the step "DeSeq2" name. 
-          - Click on the "Value options:" drop-down menu in the upper left area of the GUI. 
-          - Choose the "Merge" step to be the previous step for the DeSeq2 new step.
-          - Click on the "Add" button.
-          - Click on the "Edit" button.
+### Add DeSeq2 Step
+   <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Add_DeSeq2_Step.gif" width="650">
+   
+   1. **Add New Step:**   
+      In the 'Work-Flow' Tab choose The module template "DeSeq2_Simple(Using_Conda)" and click on the 'Create New Step' button.
+   2. **Choose Step base:**
+      - Click on the "DeSeq2" step button to see the step options. 
+      - Click on the "base" option in the left panel of the GUI, just below the step "DeSeq2" name. 
+      - Click on the "Value options:" drop-down menu in the upper left area of the GUI. 
+      - Choose the "Merge" step to be the previous step for the DeSeq2 new step.
+      - Click on the "Add" button.
+      - Click on the "Edit" button.
+      
+   3. **Edit the "redirects" options of the "DESeq2" step**
+   
+        - **Below the "redirects" in the left panel of the GUI:**
+          - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
+          - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
+          - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
+          - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
+          - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
+          - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
+          - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
           
-       3. **Edit the "redirects" options of the "DESeq2" step**
-       
-            - **Below the "redirects" in the left panel of the GUI:**
-              - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
-              - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
-              - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
-              - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
-              - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
-              - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
-              - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
-              
-            **All values in this section refer to the fields found in [The Samples Meta-Data File](#the-samples-meta-data-file)**
+        **All values in this section refer to the fields found in [The Samples Meta-Data File](#the-samples-meta-data-file)**
 
-            **For more information about the values possibilities of "--DESIGN","--LRT" and "--CONTRAST" see the [DESeq2 manual](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)**
+        **For more information about the values possibilities of "--DESIGN","--LRT" and "--CONTRAST" see the [DESeq2 manual](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)**
 
-            **It is possible to indicate more then one contrast by using "|"**
-       
+        **It is possible to indicate more then one contrast by using "|"**
+   
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
