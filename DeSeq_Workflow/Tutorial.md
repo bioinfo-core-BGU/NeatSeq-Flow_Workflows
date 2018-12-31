@@ -33,14 +33,9 @@
      - [Install NeatSeq-Flow](#install-neatseq-flow)
      - [Install DeSeq2 conda environment](#Install-DeSeq2-conda-environment)
      - [Install NeatSeq-Flow-GUI](#install-neatseq-flow-gui)
+ - [How To Use The DESeq2 Module](#how-to-use-the-deseq2-module)
  - [Start The GUI](#start-the-gui)   
-     
- - [Learn How to Create a Work-Flow](#learn-how-to-create-a-work-flow)
- - [Configure the Used Variables in the Work-Flow](#configure-the-used-variables-in-the-work-flow)
- - [Load a Work-Flow Parameter File](#load-a-work-flow-parameter-file)
- - [Configure a Sample file](#configure-a-sample-file)
- - [Configure the Cluster information ](#configure-the-cluster-information)
- - [Run the Work-Flow](#run-the-work-flow)
+ 
 
 
 
@@ -125,6 +120,8 @@
         ```  
 
 
+## How To Use The DESeq2 Module 
+
     
 ## Start The GUI
   1. Activate the **NeatSeq_Flow_GUI** conda environment:
@@ -150,8 +147,10 @@
       - Choose the "Merge" step to be the previous step for the DeSeq2 new step.
       - Click on the "Add" button.
       - Click on the "Edit" button.
+      
    3. **Edit the "redirects" options of the "DESeq2" step**
-      Below the "redirects" in the left panel of the GUI:
+      **Below the "redirects" in the left panel of the GUI:**
+      
       - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
       - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
       - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
