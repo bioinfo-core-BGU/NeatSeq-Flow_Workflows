@@ -174,7 +174,7 @@
 |-------------------------------	|-------------------------------------------------------------	|
 | use_click:                    	| Will use the CLICK clustering program [Shamir et al. 2000](http://www.aaai.org/Papers/ISMB/2000/ISMB00-032.pdf). 	|
 
-|            redirects            	|                                                                                          Value                                                                                          	|
+| redirects                     	| Value                                                                                                                                                                                   	|
 |:-------------------------------:	|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
 | --SAMPLE_DATA_FILE:             	| Path to Samples Information File                                                                                                                                                        	|
 | --GENE_ID_TYPE:                 	| The Gene ID Type i.e 'ENSEMBL'[for Bioconductor] OR 'ensembl_gene_id'/'ensembl_transcript_id' [for ENSEMBL]                                                                             	|
