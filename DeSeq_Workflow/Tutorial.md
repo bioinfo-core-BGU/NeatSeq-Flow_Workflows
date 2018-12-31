@@ -169,7 +169,7 @@
 
 ### Possible Options of The "DESeq2" Mudule
 
-  |            redirects            |                                                                                          Value                                                                                          |
+  | redirects                       | Value                                                                                                                                                                                   |
   |:-------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
   | --SAMPLE_DATA_FILE:             | Path to Samples Information File                                                                                                                                                        |
   | --GENE_ID_TYPE:                 | The Gene ID Type i.e 'ENSEMBL'[for Bioconductor] OR 'ensembl_gene_id'/'ensembl_transcript_id' [for ENSEMBL]                                                                             |
