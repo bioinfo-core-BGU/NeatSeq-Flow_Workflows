@@ -169,8 +169,8 @@
 
 ### Possible Options of The "DESeq2" Mudule
 
-|            redirects            	|                                                                                          Value                                                                                          	|
-|:-------------------------------:	|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| redirects                       	| Value                                                                                                                                                                                   	|
+|---------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | --SAMPLE_DATA_FILE:             	| Path to Samples Information File                                                                                                                                                        	|
 | --GENE_ID_TYPE:                 	| The Gene ID Type i.e 'ENSEMBL'[for Bioconductor] OR 'ensembl_gene_id'/'ensembl_transcript_id' [for ENSEMBL]                                                                             	|
 | --Annotation_db:                	| Bioconductor Annotation Data Base Name from https://bioconductor.org/packages/release/BiocViews.html#___OrgDb                                                                           	|
@@ -205,7 +205,6 @@
 | --PCA_SIZE:                     	| The Filed In the Sample Data To Determine Size In The PCA Plot. The default is Library Size                                                                                             	|
 | --Enriched_terms_overlap:       	| Test for genes overlap in enriched terms                                                                                                                                                	|
 | --USE_INPUT_GENES_AS_BACKGROUND 	| Use The input Genes as the Background for Enrichment Analysis                                                                                                                           	|
-
 
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
