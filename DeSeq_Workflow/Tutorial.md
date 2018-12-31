@@ -260,5 +260,18 @@ It is Possible to Add("New"),Edit or Remove the following Options:
    7. Create new file entitled "GSE72232_Samples_File"
    8. Click on the "OK" button.
    
+ **If you have count Data for each sample separately (Not for this tutorial!! )  **
+   
+   1. Edit the "Project Title" field in the leftmost corner of the tab to 'GSE72232'.
+   2. Click on the "Add Sample File" button.
+   3. Select all your count data files. 
+   4. Click on the "OK" button.
+   5. For each sample select from the "File Type" drop-down menu:
+   - "HTSeq.counts" for HTSeq counts data.
+   - "genes.counts" for RSEM counts data.
+   6. Click on the "Save Sample File" button.
+   7. Create new file entitled "GSE72232_Samples_File"
+   8. Click on the "OK" button.
+   
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
