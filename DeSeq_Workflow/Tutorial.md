@@ -236,7 +236,7 @@ It is Possible to Add("New"),Edit or Remove the following Options:
       - Click on the "Edit" button.
    4. Click on "Species" and edit the "Value" field to 'Caenorhabditis elegans genes' (**Dont forget the quotation marks**) and then click on the "Edit" button.
    
-   **In the "Species" option it is possible to use any of the species names available at [BioMart - Ensembl](https://www.ensembl.org/biomart/martview)
+   **In the "Species" option it is possible to use any of the species names available at [BioMart - Ensembl](https://www.ensembl.org/biomart/martview)***
       
   **Go back to the 'Work-Flow' Tab:**
  
@@ -245,7 +245,20 @@ It is Possible to Add("New"),Edit or Remove the following Options:
    3. Click on the "OK" button.
 
         
+***
+### Create a Samples File:
+   <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Create_Samples_File.gif" width="650">
+    
+ **In the 'Samples' Tab:**
         
-        
+   1. Edit the "Project Title" field in the leftmost corner of the tab to 'GSE72232'.
+   2. Click on the "Add Project File" button.
+   3. Select the "GSE72232_RNA-seq_combined_counts.txt.gz" file. 
+   4. Click on the "OK" button.
+   5. Select from the "File Type" drop-down menu the "results" file type.
+   6. Click on the "Save Sample File" button.
+   7. Create new file entitled "GSE72232_Samples_File"
+   8. Click on the "OK" button.
+   
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
