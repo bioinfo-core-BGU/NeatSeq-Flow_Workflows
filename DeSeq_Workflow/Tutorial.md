@@ -156,15 +156,16 @@
           - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
           - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
           
-          **For more information about the values possibilities of "--DESIGN","--LRT" and "--CONTRAST" see the [DESeq2 manual](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) **
-          **It is possible to indicate more then one contrast by using "|"**
+        **For more information about the values possibilities of "--DESIGN","--LRT" and "--CONTRAST" see the [DESeq2 manual](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) **
+        
+        **It is possible to indicate more then one contrast by using "|"**
           
           - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
           - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
           - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
           - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
           
-          **All values in this section refer to the fields found in [The Samples Meta-Data File](#the-samples-meta-data-file)
+        **All values in this section refer to the fields found in [The Samples Meta-Data File](#the-samples-meta-data-file)
    
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
