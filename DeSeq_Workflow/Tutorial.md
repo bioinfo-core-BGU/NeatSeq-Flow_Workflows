@@ -160,9 +160,9 @@
    3. **Edit the "redirects" options of the "DESeq2" step**
    
         - **Below the "redirects" in the left panel of the GUI:**
-          - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
-          - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
-          - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
+          - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' (**Dont forget the quotation marks**) then click the "Edit" button.
+          - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' (**Dont forget the quotation marks**) then click the "Edit" button.
+          - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' (**Dont forget the quotation marks**) then click the "Edit" button.
           - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
           - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
           - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
@@ -225,21 +225,23 @@ It is Possible to Add("New"),Edit or Remove the following Options:
 ### Edit The Vars Tab:
    <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Edit_Vars.gif" width="650">
     
-   **In the 'Vars' Tab:**
-      1. Click on the small arrow next to the "DeSeq2" in the lower panel.
-      2. Click on "conda env" and edit the "Value" field to 'DeSeq2' and then click on the "Edit" button.
-      3. Click on "SAMPLE_DATA" 
-          - Click on the "Browse" button.
-          - Select the "Samples_MetaData" file.
-          - Click on the "OK" button.
-          - Click on the "Edit" button.
-      4. Click on "Species" and edit the "Value" field to 'Caenorhabditis elegans genes' (**Dont forget the quotation marks**) and then click on the "Edit" button.
+ **In the 'Vars' Tab:**
+
+   1. Click on the small arrow next to the "DeSeq2" in the lower panel.
+   2. Click on "conda env" and edit the "Value" field to 'DeSeq2' and then click on the "Edit" button.
+   3. Click on "SAMPLE_DATA" 
+    - Click on the "Browse" button.
+    - Select the "Samples_MetaData" file.
+    - Click on the "OK" button.
+    - Click on the "Edit" button.
+   4. Click on "Species" and edit the "Value" field to 'Caenorhabditis elegans genes' (**Dont forget the quotation marks**) and then click on the "Edit" button.
        
-   **Go back to the 'Work-Flow' Tab:
-      1. Click on the "Save WorkFlow" button.
-      2. Create new file entitled "GSE72232_RNA-seq_DeSeq2_Workflow.yaml".
-      3. Click on the "OK" button.
-        
+  **Go back to the 'Work-Flow' Tab:**
+ 
+   1. Click on the "Save WorkFlow" button.
+   2. Create new file entitled "GSE72232_RNA-seq_DeSeq2_Workflow.yaml".
+   3. Click on the "OK" button.
+
         
         
 # Contact
