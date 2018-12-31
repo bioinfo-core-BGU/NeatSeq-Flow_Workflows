@@ -167,6 +167,7 @@
 
         **It is possible to indicate more then one contrast by using "|"**
 
+***
 ### Possible Options of The "DESeq2" Mudule
 
 | General DeSeq2 Module Options 	| Value                                                       	|
