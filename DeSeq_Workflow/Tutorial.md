@@ -34,7 +34,8 @@
      - [Install DeSeq2 conda environment](#Install-DeSeq2-conda-environment)
      - [Install NeatSeq-Flow-GUI](#install-neatseq-flow-gui)
  - [How To Use The DESeq2 Module](#how-to-use-the-deseq2-module)
- - [Start The GUI](#start-the-gui)   
+ - [Start The GUI](#start-the-gui)
+    - [Add DeSeq2 Step](#add-deseq2-step)
  
 
 
@@ -135,7 +136,7 @@
         ```
 
 
-## Add DeSeq2 Step:
+## Add DeSeq2 Step
    <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Add_DeSeq2_Step.gif" width="650">
    
    1. **Add New Step:**   
@@ -149,16 +150,21 @@
       - Click on the "Edit" button.
       
    3. **Edit the "redirects" options of the "DESeq2" step**
-      **Below the "redirects" in the left panel of the GUI:**
-      
-      - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
-      - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
-      - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
-      - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
-      - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
-      - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
-      - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
-  
+   
+        **Below the "redirects" in the left panel of the GUI:**
+          - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
+          - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
+          - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
+          
+          **For more information about the values possibilities of "--DESIGN","--LRT" and "--CONTRAST" see the [DESeq2 manual](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) **
+          **It is possible to indicate more then one contrast by using "|"**
+          
+          - Click on the "--X_AXIS" option and edit the "Value" field to : 'Age' then click the "Edit" button.
+          - Click on the "--GROUP" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
+          - Click on the "--PCA_COLOR" option and edit the "Value" field to : 'Genotype' then click the "Edit" button.
+          - Click on the "--PCA_SHAPE" option and edit the "Value" field to : 'Age' then click the "Edit" button.
+          
+          **All values in this section refer to the fields found in [The Samples Meta-Data File](#the-samples-meta-data-file)
    
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
