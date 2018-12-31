@@ -37,7 +37,7 @@
  - [Start The GUI](#start-the-gui)
     - [Add DeSeq2 Step](#add-deseq2-step)
     - [Possible Options of The "DESeq2" Mudule](#possible-options-of-the-deseq2-mudule)
- 
+    - [Edit The Vars Tab](#edit-the-vars-tab)
 
 
 
@@ -222,8 +222,9 @@ It is Possible to Add("New"),Edit or Remove the following Options:
 | --USE_INPUT_GENES_AS_BACKGROUND 	| Use The input Genes as the Background for Enrichment Analysis                                                                                                                           	|
 
 ***
-### Edit the Vars Tab:
-     <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Edit_Vars.gif" width="650">
+### Edit The Vars Tab:
+    <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Edit_Vars.gif" width="650">
+    
     **In the 'Vars' Tab:**
         1. Click on the small arrow next to the "DeSeq2" in the lower panel.
         2. Click on "conda env" and edit the "Value" field to 'DeSeq2' and then click on the "Edit" button.
