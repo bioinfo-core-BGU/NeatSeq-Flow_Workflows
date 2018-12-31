@@ -152,6 +152,7 @@
    3. **Edit the "redirects" options of the "DESeq2" step**
    
         **Below the "redirects" in the left panel of the GUI:**
+        
           - Click on the "--DESIGN" option and edit the "Value" field to : '~ Genotype + Age + Genotype:Age' then click the "Edit" button.
           - Click on the "--LRT" option and edit the "Value" field to : '~ Genotype + Age' then click the "Edit" button.
           - Click on the "--CONTRAST" option and edit the "Value" field to : 'Genotype,N2,mir-71|Age,Day0,Day5' then click the "Edit" button.
