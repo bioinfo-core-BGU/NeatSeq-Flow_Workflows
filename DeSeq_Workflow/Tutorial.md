@@ -30,6 +30,7 @@
  - A web-browser (Preferably firefox) installed on your linux system.
 
 If you intend to connect to your linux system by ssh you will need Windows X server such as [MobaXterm](https://mobaxterm.mobatek.net/)
+
 **All other dependencies will be installed in the [Installation](#Installation) section of this tutorial**
 
 ***
@@ -85,6 +86,10 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
      | mir-71_Day0_rep3 |  mir-71  | Day0 | rep3 |
      | mir-71_Day5_rep3 |  mir-71  | Day5 | rep3 |
 
+***     
+
+# Installation     
+     
 ## Install Conda
 
   - For Linux 64bit, in the terminal:
