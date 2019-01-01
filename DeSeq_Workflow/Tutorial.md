@@ -45,7 +45,7 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
  - [How To Use The DESeq2 Module](#how-to-use-the-deseq2-module)
  - [Start The GUI](#start-the-gui)
     - [Add DeSeq2 Step](#add-deseq2-step)
-    - [Possible Options of The "DESeq2" Mudule](#possible-options-of-the-deseq2-mudule)
+    - [Possible Options of The "DESeq2" Module](#possible-options-of-the-deseq2-module)
     - [Edit The Vars Tab](#edit-the-vars-tab)
     - [Create a Samples File](#create-a-samples-file)
     - [Run Work-Flow](#run-work-flow)
@@ -190,7 +190,7 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
         **It is possible to indicate more then one contrast by using "|"**
 
 ***
-### Possible Options of The "DESeq2" Mudule
+### Possible Options of The "DESeq2" Module
 
 It is Possible to Add("New"),Edit or Remove the following Options:  
 
