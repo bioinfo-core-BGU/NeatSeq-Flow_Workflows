@@ -38,7 +38,7 @@
     - [Add DeSeq2 Step](#add-deseq2-step)
     - [Possible Options of The "DESeq2" Mudule](#possible-options-of-the-deseq2-mudule)
     - [Edit The Vars Tab](#edit-the-vars-tab)
-
+    - [Create a Samples File](#create-a-samples-file)
 
 
 
