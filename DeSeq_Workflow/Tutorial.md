@@ -40,6 +40,7 @@
     - [Edit The Vars Tab](#edit-the-vars-tab)
     - [Create a Samples File](#create-a-samples-file)
     - [Run Work-Flow](#run-work-flow)
+ - [Output Data](#output-data)
  - [Contact](#contact)
 
 ***
@@ -302,7 +303,12 @@ It is Possible to Add("New"),Edit or Remove the following Options:
 ## Output Data:
    <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Output_Data.PNG" width="450">
  
- **[Click here for more information about the NeatSeq-Flow platform output directory structure](https://neatseq-flow.readthedocs.io/en/latest/03.output.html)**
-
+ **[Click here for more information about the NeatSeq-Flow platform, output directory structure](https://neatseq-flow.readthedocs.io/en/latest/03.output.html)**
+ 
+ In Data -> DeSeq2 -> DeSeq2 directory you will find the DESeq2 module results:
+      - For each statistical analysis a visual report in HTML format (can be opened in a web browser).
+      - For each statistical analysis a directory encompassing all the analysis results files including figures and tables.
+      - An Annotation file of the annotation used in this analysis.
+      
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
