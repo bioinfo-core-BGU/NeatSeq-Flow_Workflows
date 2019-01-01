@@ -1,4 +1,4 @@
-# Differential Expression (DESeq2), Clustering and Functional analyses Tutorial
+# Differential Expression (DESeq2), Clustering and Functional Analyses Tutorial
 ## Differential Gene Expression Analysis Using **[NeatSeq-Flow](http://neatseq-flow.readthedocs.io/en/latest/)** Platform
 &nbsp;  
 &nbsp;
