@@ -300,9 +300,9 @@ It is Possible to Add("New"),Edit or Remove the following Options:
    8. Click on the "Run Monitor" button.
 
 ## Output Data:
-   <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Output_Data.PNG" width="250">
+   <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Output_Data.PNG" width="450">
  
- *[Click here for more information about the NeatSeq-Flow platform output directory structure](https://neatseq-flow.readthedocs.io/en/latest/03.output.html)**
+ **[Click here for more information about the NeatSeq-Flow platform output directory structure](https://neatseq-flow.readthedocs.io/en/latest/03.output.html)**
 
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
