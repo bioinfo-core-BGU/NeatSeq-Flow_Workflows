@@ -39,8 +39,8 @@
     - [Possible Options of The "DESeq2" Mudule](#possible-options-of-the-deseq2-mudule)
     - [Edit The Vars Tab](#edit-the-vars-tab)
     - [Create a Samples File](#create-a-samples-file)
-
-
+    - [Run Work-Flow](#run-work-flow)
+ - [Contact](#contact)
 
 ***
 
@@ -254,11 +254,11 @@ It is Possible to Add("New"),Edit or Remove the following Options:
    1. Edit the "Project Title" field in the leftmost corner of the tab to 'GSE72232'.
    2. Click on the "Add Project File" button.
    3. Select the "GSE72232_RNA-seq_combined_counts.txt.gz" file. 
-   4. Click on the "OK" button.
+   4. Click on the "Open" button.
    5. Select from the "File Type" drop-down menu the "results" file type.
    6. Click on the "Save Sample File" button.
    7. Create new file entitled "GSE72232_Samples_File"
-   8. Click on the "OK" button.
+   8. Click on the "Save" button.
    
  **If you have count Data for each sample separately (Not for this tutorial!! )**
    
@@ -272,7 +272,33 @@ It is Possible to Add("New"),Edit or Remove the following Options:
       - "genes.counts" for RSEM counts data.
    7. Click on the "Save Sample File" button.
    8. Create new Samples File.
-   9. Click on the "OK" button.
+   9. Click on the "Save" button.
    
+   
+***
+### Run Work-Flow:
+   <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/doc/Run_DeSeq2.gif" width="850">
+    
+ **In the 'Run' Tab:**
+        
+   1. Click on the "Search" button next to the "Conda environment to use" field and wait until at least 2 conda environments are found.
+      - If an error occurs try again.
+   2. Select from the "Conda environment to use" drop-down menu the "NeatSeq_Flow" environment.
+      - If you have previously installed the NeatSeq_Flow Tutorial environment it is also possible to choose it.
+   3. Click on the "Browse" button next to the "Parameter File" field.
+      - Then select the "GSE72232_RNA-seq_DeSeq2_Workflow.yaml" file and click on the "OPEN" button.
+   4. Click on the "Browse" button next to the "Sample File" field.
+      - Then select the "GSE72232_Samples_File" file and click on the "OPEN" button.
+   5. It is possible to select the output directory by:
+      - Clicking on the "Browse" button next to the "Project Directory" field.
+      - Then select the your desired output directory and click on the "OPEN" button.
+      - Leaving this field empty will set the output directory to the current working directory.
+   6. Click on the "Generate scripts" button.
+      - If an error occurs try again.
+      - It the error re-occurs see the terminal for more info.
+   7. Click on the "Run scripts" button.
+   8. Click on the "Run Monitor" button.
+
+
 # Contact
 Please contact Liron Levin at: [levinl@post.bgu.ac.il](mailto:levinl@post.bgu.ac.il)
