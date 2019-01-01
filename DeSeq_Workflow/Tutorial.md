@@ -1,4 +1,4 @@
-# DeSeq2 Module Tutorial
+# Differential Expression (DESeq2), Clustering and Functional analyses Tutorial
 ## Differential Gene Expression Analysis Using **[NeatSeq-Flow](http://neatseq-flow.readthedocs.io/en/latest/)** Platform
 &nbsp;  
 &nbsp;
@@ -295,7 +295,7 @@ It is Possible to Add("New"),Edit or Remove the following Options:
       - Leaving this field empty will set the output directory to the current working directory.
    6. Click on the "Generate scripts" button.
       - If an error occurs try again.
-      - It the error re-occurs see the terminal for more info.
+      - If the error re-occurs see the terminal for more info.
    7. Click on the "Run scripts" button.
    8. Click on the "Run Monitor" button.
 
