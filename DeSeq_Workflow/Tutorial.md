@@ -105,11 +105,11 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
 
   1. Download the **NeatSeq Flow** installer file:
         ```Bash
-          wget http://neatseq-flow.readthedocs.io/en/latest/extra/NeatSeq_Flow_conda_env.yaml
+          curl https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow-GUI/master/NeatSeq_Flow_GUI_installer.yaml > NeatSeq_Flow_installer.yaml
         ```
   2. Create the **NeatSeq_Flow** conda environment:
         ```Bash
-           conda env create -f NeatSeq_Flow_conda_env.yaml
+           conda env create -f NeatSeq_Flow_installer.yaml
         ```  
         
 ## Install DeSeq2 conda environment
@@ -125,16 +125,7 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
   
         
         
-## Install NeatSeq-Flow-GUI
-**Note you need to have a web-browser (Preferably firefox) installed on your system.** 
-  1. Download the **NeatSeq-Flow-GUI** installer file:
-        ```Bash
-          wget https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow-GUI/master/NeatSeq_Flow_GUI_installer.yaml
-        ```
-  2. Create the **NeatSeq_Flow_GUI** conda environment:
-        ```Bash
-          conda env create -f NeatSeq_Flow_GUI_installer.yaml
-        ```  
+
 
 ***
 ## How To Use The DESeq2 Module 
@@ -148,10 +139,13 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
     <img src="https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow-GUI/master/doc/Static_GUI.png" width="650">
   
 ## Start The GUI
+
+**Note to use the GUI you need to have a web-browser (Preferably firefox) installed on your system.** 
+
   1. Activate the **NeatSeq_Flow_GUI** conda environment:
         ```Bash
           bash
-          source activate NeatSeq_Flow_GUI
+          source activate NeatSeq_Flow
         ```
   2. Run **NeatSeq_Flow_GUI**:
         ```Bash 
