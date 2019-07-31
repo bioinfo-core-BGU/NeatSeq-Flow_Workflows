@@ -21,3 +21,4 @@ dependencies:
     - bioconductor-keggrest=1.12.3
     - bioconductor-scater=1.4.0
     - bioconductor-sva=3.8 
+    - r-xml2
