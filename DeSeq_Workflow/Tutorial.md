@@ -115,7 +115,7 @@ If you intend to connect to your linux system by ssh you will need Windows X ser
 ## Install DeSeq2 conda environment
   1. Download the **DeSeq2 conda environment** installer file:
         ```Bash
-          wget https://raw.githubusercontent.com/bioinfo-core-BGU/NeatSeq-Flow_Workflows/master/DeSeq_Workflow/DeSeq2_module/DeSeq2_env_install.yaml
+          wget https://raw.githubusercontent.com/bioinfo-core-BGU/neatseq-flow-modules/master/neatseq_flow_modules/Liron/DeSeq2_module/DeSeq2_env_install.yaml
         ```
   2. Create the **DeSeq2** conda environment:
         ```Bash
